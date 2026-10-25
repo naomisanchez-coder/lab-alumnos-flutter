@@ -31,17 +31,21 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   /// Comprueba los campos antes de continuar.
+
   void _iniciarSesion() {
     FocusScope.of(context).unfocus();
 
+    // Verifica que el formulario tenga datos válidos.
     if (_formKey.currentState!.validate()) {
-      // Autenticación simulada para este laboratorio.
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Datos válidos. Inicio de sesión correcto.'),
+          content: Text('Inicio de sesión simulado correctamente'),
           backgroundColor: AppTheme.primaryColor,
         ),
       );
+
+      // Navega al menú y reemplaza la pantalla Login.
+      Navigator.pushReplacementNamed(context, '/menu');
 
       // Posteriormente navegaremos a MenuScreen.
     }
