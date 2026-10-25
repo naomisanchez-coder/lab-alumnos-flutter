@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/alumnos_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/menu_screen.dart';
 import 'theme/app_theme.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             const PantallaTemporal(titulo: 'Registrar Alumno'),
         '/alumnos': (context) =>
             const PantallaTemporal(titulo: 'Listar Alumnos'),
-        '/perfil': (context) => const PantallaTemporal(titulo: 'Perfil'),
+        '/alumnos': (context) => const AlumnosScreen(),
       },
     );
   }
