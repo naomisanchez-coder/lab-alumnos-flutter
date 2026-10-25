@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/registro_screen.dart';
 import 'screens/alumnos_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/menu_screen.dart';
@@ -29,8 +30,7 @@ class MyApp extends StatelessWidget {
         '/menu': (context) => const MenuScreen(),
 
         // Vistas temporales hasta implementar cada pantalla.
-        '/registro': (context) =>
-            const PantallaTemporal(titulo: 'Registrar Alumno'),
+        '/registro': (context) => const RegistroScreen(),
         '/alumnos': (context) =>
             const PantallaTemporal(titulo: 'Listar Alumnos'),
         '/alumnos': (context) => const AlumnosScreen(),
