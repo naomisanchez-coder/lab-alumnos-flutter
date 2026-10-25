@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 
 import '../data/alumnos_data.dart';
 import '../models/alumno.dart';
-import '../theme/app_theme.dart';
 
 /// Pantalla para registrar nuevos alumnos.
 class RegistroScreen extends StatefulWidget {

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'screens/registro_screen.dart';
-import 'screens/alumnos_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/menu_screen.dart';
+import 'screens/alumnos_screen.dart';
+import 'screens/registro_screen.dart';
+import 'screens/perfil_screen.dart';
+
+// Necesario para reconocer AppTheme.lightTheme.
 import 'theme/app_theme.dart';
 
 void main() {
@@ -28,12 +31,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginScreen(),
         '/menu': (context) => const MenuScreen(),
-
-        // Vistas temporales hasta implementar cada pantalla.
         '/registro': (context) => const RegistroScreen(),
-        '/alumnos': (context) =>
-            const PantallaTemporal(titulo: 'Listar Alumnos'),
         '/alumnos': (context) => const AlumnosScreen(),
+        '/perfil': (context) => const PerfilScreen(),
       },
     );
   }
